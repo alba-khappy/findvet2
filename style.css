@@ -1,0 +1,777 @@
+/*general styles*/
+
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    line-height: 1.5rem;
+    color: #333333;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button-style {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+    padding: .5rem 2.8rem;
+    border-radius: 1.5rem;
+}
+
+.h2-style {
+    max-width: 20em;
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.primary-button {
+    border: none;
+    background-color: #2EB168;
+    font-family: 'Exo 2', sans-serif;
+    padding: .4rem .7rem;
+}
+
+.secondary-button {
+    border: 1px solid #333333;
+    background-color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    padding: .4rem .7rem;
+    color: #333333;
+}
+
+.social-link {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.social-link--telegram {
+    background: transparent url(./images/telegram.svg) no-repeat center;
+}
+
+.social-link--whatsapp {
+    background: transparent url(./images/whatsapp.svg) no-repeat center;
+}
+
+.social-link--phone {
+    background: transparent url(./images/phone.svg) no-repeat center;
+}
+
+.social-link--email {
+    background: transparent url(./images/email.svg) no-repeat center;
+}
+
+/*header*/
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255,255,255,0.95);
+    z-index: 10;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.header__logo {
+    font-weight: 600;
+    font-size: 1.25rem;
+    transform: translateX(45px);
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__button--enter {
+    background: transparent;
+    border: none;
+}
+
+.header__button--enter svg{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.header__nav-item {
+    
+}
+
+.header__nav-link {
+
+}
+
+/* .header__menu {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    border: none;
+    background-color: transparent;
+}
+
+.header__menu > span {
+    width: 1.5rem;
+    height: .1rem;
+    background-color: #000;
+}
+
+.header__navigation {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    z-index: 20;
+}
+
+.header__navigation-list {
+    width: 15rem;
+    height: 100vh;
+    background-color: #111;
+    margin: 0;
+    padding: 1rem 2rem 0;
+    z-index: 100;
+}
+
+.header__navigation-item {
+    margin-bottom: .8rem;
+}
+
+.header__navigation-item:first-child {
+    text-align: right;
+}
+
+.header__navigation-button-close {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.header__navigation-button-close::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 1.5rem;
+    height: .1rem;
+    background-color: #FFF;
+    transform: rotate(45deg);
+}
+
+.header__navigation-button-close::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 1.5rem;
+    height: .1rem;
+    background-color: #FFF;
+    transform: rotate(-45deg);
+}
+
+.header__navigation-link {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.6);
+} */
+
+/* .header__socials-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+/*main-banner*/
+
+.main-banner__section {
+    /* background: linear-gradient(180deg, #9FE5FF 0%, #EBEFF0 100%); */
+    background: url(./images/widget.png) 125% 70%/ 40rem no-repeat, linear-gradient(180deg, #9FE5FF 0%, #EBEFF0 100%);
+}
+
+.main-banner__container {
+    padding: 9rem 0 6rem;
+}
+
+.main-banner__left-part {
+    width: 50%;
+}
+
+
+
+
+/*section-widjet*/
+
+.fv_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 32px 0;
+}
+
+.fv_item {
+    text-align: center;
+    /* width: 23%; */
+    text-align: center;
+    margin: 0 calc(100% / 4 - 23%) 0 0;
+    margin-bottom: 35px;
+    box-shadow: 0 0 2px rgb(0 0 0 / 20%);
+    border-radius: 20px/10%;
+    position: relative;
+    transition: all 0.2s linear;
+}
+
+/*widget__section*/
+
+.widget__section {
+    margin-bottom: 4rem;
+}
+
+/*pharmacy__section*/
+
+.pharmacy__section {
+    margin-bottom: 4rem;
+}
+
+.pharmacy__h2 {
+    margin-bottom: 3rem;
+}
+
+.pharmacy__description {
+    width: 35%;
+    margin: 0 auto .5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.pharmacy__links-wrapper {
+    width: 78%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 10rem);
+    gap: 1rem 4rem;
+    margin: 0 auto 6rem;
+}
+
+.pharmacy__link {
+    background: transparent no-repeat center;
+    background-size: contain;
+}
+
+.pharmacy__link:first-child {
+    background-image: url(./images/4lapy.svg);
+}
+
+.pharmacy__link:nth-child(2) {
+    background-image: url(./images/vetapteka.svg);
+}
+
+.pharmacy__link:nth-child(3) {
+    background-image: url(./images/yarvet.svg);
+}
+
+.pharmacy__link:nth-child(4) {
+    background-image: url(./images/biostyle.jpg);
+}
+
+.pharmacy__link:nth-child(5) {
+    background-image: url(./images/logomail.png);
+}
+
+.pharmacy__link:nth-child(6) {
+    background-image: url(./images/uvltravet.png);
+}
+
+.pharmacy__link:nth-child(7) {
+    background-image: url(./images/makvet.svg);
+}
+
+.pharmacy__link:last-child {
+    background-image: url(./images/moszoo.png);
+}
+
+/*efficiency__section*/
+
+.efficiency__section {
+    margin-bottom: 4rem;
+}
+
+.efficiency__h2 {
+    line-height: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.efficiency__description {
+    margin: 0;
+}
+
+.efficiency__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.efficiency__item {
+    display: grid;
+    grid-template-columns: 3rem auto;
+    max-width: 40em;
+    align-items: center;
+    gap: .2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.efficiency__item::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #1f5bff;
+    border: 0.1rem solid #1f5bff;
+}
+
+.efficiency__item:first-child:before {
+    content: '1';
+}
+
+.efficiency__item:nth-child(2):before {
+    content: '2';
+}
+
+.efficiency__item:last-child:before {
+    content: '3';
+}
+
+.efficiency__heading {
+    margin: 0;
+}
+
+.efficiency__description {
+   grid-area: 2/2/3/3; 
+}
+
+/*advantages__section*/
+
+.advantages__section {
+    margin-bottom: 6.5rem;
+}
+
+.advantages__h2 {
+    margin-bottom: 3rem;
+}
+
+.advantages__desctiption {
+    text-align: center;
+    max-width: 30%;
+    margin: 0 auto 5rem;
+}
+
+.advantages__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 9rem;
+}
+
+.advantages__item {
+    display:grid;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+}
+
+.advantages__img {
+    position: relative;
+    display: block;
+    background-size: cover;
+}
+
+.advantages__img--1 {
+    background: transparent url(./images/advantages-img-1.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.advantages__img--2 {
+    background: transparent  url(./images/advantages-img-2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.advantages__img--3 {
+    background: transparent  url(./images/advantages-img-3.jpg) no-repeat center;
+    background-size: cover;
+}
+  
+.advantages__img:after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.advantages__item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advantages__item-description--reverse {
+    grid-area: 1/1/2/2;
+}
+
+.advantages__item--normal {
+    grid-template-columns: 50% auto;
+}
+
+.advantages__item--reverse {
+    grid-template-columns: auto 50%;
+}
+
+.advantages__item:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.advantages__item-heading {
+   margin: 0 0 1.5rem;
+   
+}
+
+.advantages__content {
+    margin: 0; 
+}
+
+
+
+/*footer*/
+
+.footer__h2 {
+    margin-bottom: 3rem;
+}
+
+.footer__contant-wrapper {
+    display: flex;
+    width: 68%;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+
+.footer__contant--left-part, .footer__contant--right-part {
+    width: 50%;
+}
+
+.footer__contant--left-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__contact-link {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer__description {
+    text-align: center;
+    margin: 0;
+}
+
+.footer__address {
+    font-style: normal;
+    margin-bottom: 2rem;
+}
+
+.footer__socials-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 455px;
+    background-color: antiquewhite;
+}
+
+.footer__agreement {
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+/* @media (max-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+
+    .pharmacy__links-wrapper {
+        width: 85%;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, 10rem);
+        gap: 2rem;
+    }
+
+    .pharmacy__link:nth-child(7) {
+        grid-area: 3/1/4/3;
+    }
+
+    .pharmacy__link:last-child {
+        grid-area: 3/2/4/4;
+    }
+
+    .advantages__list {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .footer__contant-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+} */
+
+/* @media (max-width: 980px) {
+
+    .header__socials-wrapper {
+        display: none;
+    }
+
+    .header__logo {
+        transform: translateX(0);
+    }
+
+    .header__menu {
+        order: 1;
+    }
+
+    .main-banner__heading {
+        font-size: 1.7rem;
+    }
+
+    .main-banner__link {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .main-banner__link--example {
+        margin-bottom: 1rem;
+    }
+
+    .pharmacy__links-wrapper {
+        width: 100%;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, 5rem);
+        gap: 1.5rem 2rem;
+    }
+
+    .pharmacy__link:nth-child(7), .pharmacy__link:last-child  {
+        grid-area: auto;
+    }
+
+    .pharmacy__description {
+        width: 100%;
+        margin: 0 auto 2rem;
+    }
+
+    .advantages__item {
+        grid-template-columns: 100%;
+    }
+
+    .advantages__desctiption {
+        max-width: 100%;
+        line-height: 1.6rem;
+    }
+
+    .advantages__item-description--reverse {
+        grid-area: auto;
+    }
+
+    .footer__contant-wrapper {
+        flex-direction: column;
+    }
+
+    .footer__contant--left-part, .footer__contant--right-part {
+        width: 100%;
+    }
+
+    .footer__contant--left-part {
+        margin-bottom: 2rem;
+    }
+
+    .footer__contant--left-part {
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .h2-style {
+        font-size: 1.7rem;
+    }
+
+    .fv_list {
+        height: 29.5rem;
+    }
+
+    .header__container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .main-banner__heading {
+        max-width: 100%;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .main-banner__container {
+        padding: 6rem 1rem 4rem;
+    }
+
+    .pharmacy__h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .pharmacy__description {
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .efficiency__h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .efficiency__heading {
+        font-size: 1rem;
+    }
+
+    .efficiency__item {
+        grid-template-columns: 2.5rem auto;
+        margin-bottom: 1.4rem;
+    }
+
+    .efficiency__description {
+        font-size: .7rem;
+        line-height: 1rem;
+    }
+
+    .advantages__section {
+        margin-bottom: 5rem;
+    }
+
+    .advantages__h2 {
+        margin-bottom: 1rem;
+    }
+
+    .advantages__desctiption {
+        margin: 0 auto 2rem;
+    }
+
+    .advantages__list {
+        width: 100%;
+    }
+
+    .advantages__img {
+        margin-bottom: 1rem;
+    }
+
+    .advantages__item-heading {
+        margin: 0 0 0.5rem;
+    }
+
+    .advantages__content {
+        font-size: .8rem;
+        line-height: 1.1rem;
+    }
+
+    .footer__h2 {
+        margin-bottom: 1rem;
+    }
+
+    .footer__contant-wrapper {
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    .footer__contact-link {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .footer__address{
+        font-size: .8rem;
+        margin-bottom: 0;
+    }
+
+    .footer__agreement {
+        line-height: 1rem;
+    }
+} */
