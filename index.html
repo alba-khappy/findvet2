@@ -29,6 +29,7 @@
                 </li>
             </ul>
             <div class="header__buttons-wrapper">
+                <button class="header__burger-button"></button>
                 <button class="header__button--enter">
                     <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M200 266.667V166.667C200 148.257 214.924 133.333 233.333 133.333H566.667C585.077 133.333 600 148.257 600 166.667V633.333C600 651.743 585.077 666.667 566.667 666.667H233.333C214.924 666.667 200 651.743 200 633.333V533.333M200 400H433.333M433.333 400L350 325.926M433.333 400L350 474.073" stroke="#333333" stroke-width="33.3333" stroke-linecap="round" stroke-linejoin="round"/>
@@ -38,32 +39,26 @@
             </div>
         </div>
     </header>
-    <!-- <nav class="header__navigation">
+    <nav class="header__navigation">
         <ul class="header__navigation-list">
             <li class="header__navigation-item">
                 <button class="header__navigation-button-close">
                 </button>
             </li>
             <li class="header__navigation-item">
-                <a href="" class="header__navigation-link">О сервисе</a>
+                <a href="" class="header__navigation-link">Виджет</a>
             </li>
             <li class="header__navigation-item">
-                <a href="" class="header__navigation-link">Точность данных</a>
-            </li>
-            <li class="header__navigation-item">
-                <a href="" class="header__navigation-link">Гибкая настройка</a>
+                <a href="" class="header__navigation-link">Кейсы</a>
             </li>
             <li class="header__navigation-item">
                 <a href="" class="header__navigation-link">Стоимость</a>
             </li>
             <li class="header__navigation-item">
-                <a href="" class="header__navigation-link">Как получить</a>
-            </li>
-            <li class="header__navigation-item">
                 <a href="" class="header__navigation-link">Контакты</a>
             </li>
         </ul>
-    </nav> -->
+    </nav>
     <main>
         <section class="main-banner__section">
             <div class="container main-banner__container">
@@ -71,8 +66,10 @@
                     <h1 class="main-banner__heading">Актуальные цены ветеринарных препаратов на вашем сайте</h1>
                     <p class="main-banner__content">Виджет с наличием и стоимостью ваших препаратов в ветеринарных аптеках</p>
                     <p class="main-banner__content">Для фармацевтических компаний и дистрибьютеров</p>
-                    <button class="primary-button">Бесплатное демо</button>
-                    <button class="secondary-button">Задать вопрос</button>
+                    <div class="main-banner__button-wrapper">
+                        <button class="primary-button">Бесплатное демо</button>
+                        <button class="secondary-button">Задать вопрос</button> 
+                    </div>
                 </div>
                 <div class=""></div>
             </div>
@@ -170,9 +167,29 @@
         <section class="case__section">
             <div class="container case__container">
                 <h2 class="h2-style">Кейс: официальный сайт препарата Зоонорм®</h2>
-                <div class="">
-                    <div class="accordion"></div>
-                    <img src="./images/metrika.png" alt="metrika" class="">
+                <div class="case__content-wrapper">
+                    <p class="case__content-text case__content-text--1">
+                        <span class="case__content-text--bold">Раньше</span> на официальном сайте препарата Зоонорм® был просто
+                        список аптек без цен. Потенциальные покупатели не видели
+                        стоимость, а также часто переходили на сайты вет. аптек, где
+                        препарата не было в наличии. Покупка откладывалась и чаще
+                        всего намерение забывалось.</p>
+                    <img src="./images/arrow.png" alt="arrow" class="case__content-img">
+                    <p class="case__content-text case__content-text--2">
+                        <span class="case__content-text--bold">Сейчас</span> посетители сайта Зоонорм® видят только те
+                        ветеринарные аптеки, где прямо сейчас препарат есть в наличии,
+                        а также сразу видят цены и понимают, где купить выгоднее.</p>
+                    <p class="case__content-text case__content-text--3">
+                        <span class="case__content-text--bold">В итоге</span> количество переходов на сайты ветеринарных аптек
+                        увеличилось на 93%, а покупатели чаще возвращаются на сайт
+                        Зоонорм®, чтобы найти наиболее актуальные данные для новой
+                        покупки, также вырос объем продаж препарата</p>
+                </div>
+                <div class="case__metrika-wrapper">
+                    <img src="./images/metrika.png" alt="metrika" class="case__metrika-img">
+                    <p class="case__metrika-description">Сравнение двух периодов в Яндекс Метрике по сайту
+                        zoonorm.ru . Показатель «Внешние переходы» 45 дней до
+                        установки виджета FindVet и 45 дней после установки</p>
                 </div>
             </div>
         </section>
@@ -181,27 +198,24 @@
             <div class="container efficiency__container">
                 <h2 class="h2-style efficiency__h2">Почему FindVet эффективнее списка аптек?</h2>
                 <div class="efficiency__part">
-                    <ul class="efficiency__description-list">
+                    <ul class="efficiency__description-list efficiency__description-list--1">
                         <li class="efficiency__description-item efficiency__description-item--bad">Не видно стоимости</li>
                         <li class="efficiency__description-item efficiency__description-item--bad">Показываются сайты, где препарата может не быть в наличии</li>
                         <li class="efficiency__description-item efficiency__description-item--bad">Необходимо вручную проверять аптеки и вносить изменения на сайте</li>
                     </ul>
-                    <ul class="efficiency__description-list">
+                    <img src="./images/widget-1.png" alt="" class="efficiency__widget efficiency__widget--1">
+                    <p class="efficiency__bottom-text efficiency__bottom-text--1">Обычный список аптек на сайте производителя</p>
+                    <ul class="efficiency__description-list efficiency__description-list--2">
                         <li class="efficiency__description-item efficiency__description-item--good">Актуальные цены, отсортированные по выгодности</li>
                         <li class="efficiency__description-item efficiency__description-item--good">Только те сайты, где препарат есть в наличии прямо сейчас</li>
                         <li class="efficiency__description-item efficiency__description-item--good">Автоматически обновляется каждый час без вашего участия</li>
                     </ul>
-                </div>
-                <div class="efficiency__part">
-                    <img src="./images/widget-1.png" alt="" class="efficiency__widget">
-                    <img src="./images/widget-2.png" alt="" class="efficiency__widget">
-                </div>
-                <div class="efficiency__part">
-                    <p class="efficiency__bottom-text">Обычный список аптек на сайте производителя</p>
-                    <p class="efficiency__bottom-text">Автоматически обновляемый виджет FindVet</p>
+                    <img src="./images/widget-2.png" alt="" class="efficiency__widget efficiency__widget--2">
+                    <p class="efficiency__bottom-text efficiency__bottom-text--2">Автоматически обновляемый виджет FindVet</p>
                 </div>
             </div>
         </section>
+    </main>
     <footer class="footer__section">
         <div class="container footer__container">
             <h2 class="h2-style">Уточните детали</h2>
@@ -216,5 +230,6 @@
             </div>
         </div>
     </footer>
+    <script src="./burger.js"></script>
 </body>
 </html>
