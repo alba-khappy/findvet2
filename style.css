@@ -71,10 +71,17 @@ button {
 
 .primary-button {
     border: none;
-    background-color: #2EB168;
+    background-color: #08ab51;
+    color: #fff;
     font-family: 'Exo 2', sans-serif;
     font-size: 1rem;
     padding: .4rem .7rem;
+    transition: all .3s;
+}
+
+.primary-button:hover {
+    background-color: #18dc70;
+    color: #333;
 }
 
 .secondary-button {
@@ -84,6 +91,18 @@ button {
     padding: .4rem .7rem;
     font-size: 1rem;
     color: #333333;
+    transition: all .3s;
+}
+
+.secondary-button:hover {
+    background: rgba(51, 51, 51, 0.7);
+    color: #fff;
+}
+
+.text-mark-green {
+    background: #2EB168; 
+    color: #fff;
+    padding: 0 .5rem;
 }
 
 /*header*/
@@ -133,10 +152,26 @@ button {
     border: none;
 }
 
+.header__button--enter svg path {
+    transition:  all .3s;
+}
+
+.header__button--enter:hover svg path {
+    stroke: #0f954b;
+}
+
 .header__button--enter svg{
     display: block;
     width: 2rem;
     height: 2rem;
+}
+
+.header__nav-link {
+    transition:  all .3s;
+}
+
+.header__nav-link:hover {
+    color: #0f954b;
 }
 
 .header__menu {
@@ -312,9 +347,9 @@ button {
 
 .relevance__list {
     display: grid;
-    grid-template-columns: repeat(4, 10rem);
-    grid-template-rows: repeat(2, 7rem);
-    gap: 1rem;
+    grid-template-columns: repeat(4, 9rem);
+    grid-template-rows: repeat(2, 6rem);
+    gap: 2rem;
     margin: 0 0 2rem;
 }
 
@@ -425,6 +460,7 @@ button {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .case__content-img {
@@ -432,11 +468,6 @@ button {
     align-self: center;
     justify-self: center;
     opacity: .8;   
-}
-
-.case__content-text--bold {
-    background: #2EB168; 
-    padding: 0 .5rem;
 }
 
 .case__content-text--1 {
@@ -462,7 +493,7 @@ button {
 
 .case__metrika-wrapper {
     display: flex;
-    align-items: end;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -551,6 +582,10 @@ button {
     grid-area: 2/2/3/3;
 }
 
+.efficiency__bottom-text {
+    margin: 0;
+}
+
 /*footer*/
 
 .footer__container {
@@ -562,7 +597,7 @@ button {
 }
 
 .footer__contact-link {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
 }
 
@@ -756,6 +791,7 @@ button {
     .relevance__list {
         grid-template-columns: repeat(1, 10rem);
         grid-template-rows: repeat(8, 7rem);
+        gap: 1rem;
     }
 
     .relevance__additional-info {
